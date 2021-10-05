@@ -1,1 +1,6 @@
-{{ title }}
+<div class="container">
+  <h3> {{ title | titlecase}} </h3>
+  <div *ngFor="let armor of armors">
+    {{ armor.armorName }}
+  </div>
+</div>
