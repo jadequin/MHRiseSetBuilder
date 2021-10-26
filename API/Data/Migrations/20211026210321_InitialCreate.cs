@@ -12,7 +12,13 @@ namespace API.Data.Migrations
                 {
                     Id = table.Column<int>(type: "INTEGER", nullable: false)
                         .Annotation("Sqlite:Autoincrement", true),
-                    ArmorName = table.Column<string>(type: "TEXT", nullable: true)
+                    ArmorName = table.Column<string>(type: "TEXT", nullable: true),
+                    Slug = table.Column<string>(type: "TEXT", nullable: true),
+                    Rank = table.Column<string>(type: "TEXT", nullable: true),
+                    Type = table.Column<string>(type: "TEXT", nullable: true),
+                    SetId = table.Column<int>(type: "INTEGER", nullable: false),
+                    Defense = table.Column<int>(type: "INTEGER", nullable: false),
+                    Rarity = table.Column<int>(type: "INTEGER", nullable: false)
                 },
                 constraints: table =>
                 {
